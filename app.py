@@ -9,3 +9,5 @@ class RegistrationForm(App):
         # Add your registration form widgets here (e.g., TextInput, Button)
         return layout
 if __name__ == '__main__':    RegistrationForm().run()
+else:    print("This module is not meant to be imported. Please run it directly.")
+
