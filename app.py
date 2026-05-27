@@ -13,18 +13,27 @@ class RegistrationForm(App):
         name_label = Label(text="Name:", font_size=18, height=30)
         self.name_input = TextInput(multiline=False, font_size=18)
 
-        name_label = Label(text="Name:", font_size=18, height=30)
-        self.name_input = TextInput(multiline=False, font_size=18)
+        email_label = Label(text="Email:", font_size=18, height=30)
+        self.email_input = TextInput(multiline=False, font_size=18)
 
-        name_label = Label(text="Name:", font_size=18, height=30)
-        self.name_input = TextInput(multiline=False, font_size=18)
-        
-        name_label = Label(text="Name:", font_size=18, height=30)
-        self.name_input = TextInput(multiline=False, font_size=18)
+        password_label = Label(text="Password:", font_size=18, height=30)
+        self.password_input = TextInput(multiline=False, font_size=18)
+
+        confirm_label = Label(text="Confirm Password:", font_size=18, height=30)
+        self.confirm_input = TextInput(multiline=False, font_size=18)
 
         # Adding widgets to layout
         layout.add_widget(head_label)
         layout.add_widget(name_label)
+        layout.add_widget(self.name_input)
+        layout.add_widget(email_label)
+        layout.add_widget(self.email_input)
+        layout.add_widget(password_label)
+        layout.add_widget(self.password_input)
+
+        return layout
+
+
         layout.add_widget(self.name_input)
 
         return layout
