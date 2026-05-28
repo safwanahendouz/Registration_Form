@@ -30,6 +30,9 @@ class RegistrationForm(App):
         layout.add_widget(self.email_input)
         layout.add_widget(password_label)
         layout.add_widget(self.password_input)
+        layout.add_widget(confirm_label)
+        layout.add_widget(self.confirm_input)
+
 
         return layout
 
@@ -41,3 +44,8 @@ class RegistrationForm(App):
 
 if __name__ == '__main__':
     RegistrationForm().run()
+    lambda: print("Registration form submitted")
+    layout.add_widget(submit_button)
+    
+
+    
