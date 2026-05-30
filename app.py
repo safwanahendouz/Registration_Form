@@ -36,13 +36,6 @@ class RegistrationForm(App):
         layout.add_widget(confirm_label)
         layout.add_widget(self.confirm_input)
 
-        # Submit button
-        submit_button = Button(text="Submit", font_size=18, height=50)
-        submit_button.bind(on_press=self.on_submit)
-        layout.add_widget(submit_button)
-
-        return layout
-
     def on_submit(self, instance):
         name = self.name_input.text
         email = self.email_input.text
@@ -80,7 +73,6 @@ class RegistrationForm(App):
         self.confirm_input.text = ""
 
 
-if __name__ == '__main__':
-    RegistrationForm().run()
+
 
     
