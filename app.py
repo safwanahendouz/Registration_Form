@@ -37,6 +37,10 @@ class RegistrationForm(App):
         layout.add_widget(self.password_input)
         layout.add_widget(self.confirm_password_input)
         submit_button = Button(text="Submit", font_size=18, size_hint=(1, None), height=40)
+        submit_button.bind(on_press=self.submit_form)
+        layout.add_widget(submit_button)
+
+        
 
 
 
